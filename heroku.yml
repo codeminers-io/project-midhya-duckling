@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: duckling-example-exe --no-access-log --no-error-log
