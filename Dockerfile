@@ -11,9 +11,9 @@ WORKDIR duckling
 
 ADD stack.yaml .
 
-RUN stack setup
-
 ADD . .
+
+RUN stack setup
 
 # NOTE:`stack build` will use as many cores as are available to build
 # in parallel. However, this can cause OOM issues as the linking step
